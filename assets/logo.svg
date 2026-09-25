@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-labelledby="title desc">
+  <title id="title">My Life Square logo</title>
+  <desc id="desc">Geometric MLS monogram in electric blue and gold on deep blue.</desc>
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00C6FF"/>
+      <stop offset="0.5" stop-color="#E9F7FF"/>
+      <stop offset="1" stop-color="#F4C542"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="35%" cy="20%" r="85%">
+      <stop offset="0" stop-color="#0E426D"/>
+      <stop offset="0.55" stop-color="#0B1E3A"/>
+      <stop offset="1" stop-color="#04111F"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="104" height="104" rx="24" fill="url(#bg)" stroke="#15537D" stroke-width="2"/>
+  <path d="M18 25H77L91 34V78L82 91H25L17 84Z" fill="none" stroke="url(#frame)" stroke-width="4.8" stroke-linejoin="round"/>
+  <path d="M24 77V35L45 56L58 43M32 58L45 71L56 60" fill="none" stroke="#00C6FF" stroke-width="7" stroke-linejoin="miter" stroke-linecap="square"/>
+  <path d="M61 35V78H80M72 40H87L76 53L88 65V78" fill="none" stroke="#F4C542" stroke-width="7" stroke-linejoin="miter" stroke-linecap="square"/>
+</svg>
