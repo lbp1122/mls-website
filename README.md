@@ -35,3 +35,7 @@ Support:
 
 Data deletion:
 `https://lbp1122.github.io/mls-website/delete-data.html`
+
+## Brand
+
+The website uses the approved primary MLS artwork at `assets/logo-primary.webp` across the navigation, hero, legal pages and footer. Brand colours remain Deep Blue #0B1E3A, Electric Blue #00C6FF and Gold #F4C542.
