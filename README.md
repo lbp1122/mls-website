@@ -13,19 +13,25 @@ Contact: mylifesquare22@gmail.com
 - Data deletion instructions
 - Life Point methodology
 
-## Deployment
-Designed for GitHub Pages via `.github/workflows/pages.yml`.
+## GitHub Pages
 
-Expected URL after enabling GitHub Pages through Actions:
+This is a static site designed to publish directly from the repository root.
+
+Repository: `lbp1122/mls-website`
+
+GitHub Pages setup:
+- Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/(root)**
+
+Expected public URL:
 `https://lbp1122.github.io/mls-website/`
 
-Privacy policy URL:
+Privacy policy:
 `https://lbp1122.github.io/mls-website/privacy.html`
 
-Support URL:
+Support:
 `https://lbp1122.github.io/mls-website/support.html`
 
-Data deletion URL:
+Data deletion:
 `https://lbp1122.github.io/mls-website/delete-data.html`
-
-Deployment trigger: 2026-09-25
