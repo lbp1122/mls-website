@@ -27,3 +27,5 @@ Support URL:
 
 Data deletion URL:
 `https://lbp1122.github.io/mls-website/delete-data.html`
+
+Deployment trigger: 2026-09-25
