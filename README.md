@@ -38,4 +38,8 @@ Data deletion:
 
 ## Brand
 
-The website uses the approved primary MLS artwork at `assets/logo-primary.webp` across the navigation, hero, legal pages and footer. Brand colours remain Deep Blue #0B1E3A, Electric Blue #00C6FF and Gold #F4C542.
+Approved MLS app artwork: `assets/mls-icon.png` (512×512), copied byte-for-byte from `lbp1122/surpluslab/assets/branding/SurplusLab-Icon-512.png` at commit `e9206098a9af23a1814932654968c07f2639ca86`. The website uses blue #075494, cyan #00C9D8, amber #FFC400 and orange #ED6500 with navy text. Images preserve the original square proportions without added artwork padding. SHA-256: `b851bead40053eda6f94b7896b73f7fb60d81f46456b7ec20d5b44466c45fbbd`.
+
+## October 2026 content refresh
+
+Home and methodology reflect separate Health → Belief → Knowledge → Relationship records, Starting Position, guided Update, and Journey. No ideal HBKR balance or combined Life Total is promoted. Android remains in testing; no public Play Store download is advertised. Existing seven website languages are retained. Health Connect and local reset instructions match the current Android test build.
