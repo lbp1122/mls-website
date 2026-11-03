@@ -6,7 +6,8 @@ const LANGS={
  "zh-TW":{name:"繁體中文",locale:"zh-TW"},
  th:{name:"ไทย",locale:"th"},
  ja:{name:"日本語",locale:"ja"},
- ko:{name:"한국어",locale:"ko"}
+ ko:{name:"한국어",locale:"ko"},
+ vi:{name:"Tiếng Việt",locale:"vi"}
 };
 
 const T={
@@ -500,7 +501,11 @@ const REFRESH={
 };
 for(const lang of Object.keys(REFRESH))Object.assign(T[lang],REFRESH[lang]);
 
+// Vietnamese public-site copy is kept separately for editorial review.
+T.vi=window.MLSWebsiteVI||{};
+
 const legalFallback={
+ vi:"Bản dịch tiếng Việt được cung cấp để thuận tiện. Nếu bản dịch có khác biệt so với bản tiếng Anh, hãy tham khảo bản tiếng Anh để giải thích nội dung.",
  th:"เอกสารฉบับแปลนี้จัดทำเพื่อความสะดวก หากข้อความแปลแตกต่างจากฉบับภาษาอังกฤษ ให้ใช้ฉบับภาษาอังกฤษเป็นข้อความอ้างอิง",
  ja:"この翻訳は便宜のために提供されています。翻訳と英語版に相違がある場合、英語版を基準文書とします。",
  ko:"이 번역은 편의를 위해 제공됩니다. 번역본과 영어본이 다른 경우 영어본을 기준 문서로 합니다.",
@@ -519,6 +524,7 @@ function guess(){
  if(raw.startsWith("th"))return"th";
  if(raw.startsWith("ja"))return"ja";
  if(raw.startsWith("ko"))return"ko";
+ if(raw.startsWith("vi"))return"vi";
  return"en";
 }
 function mapText(root,dict){
@@ -571,7 +577,7 @@ function initSelector(selected,bind=true){
   if(!nav)return;
   slot=document.createElement("div");slot.className="language-slot";nav.appendChild(slot);
  }
- slot.innerHTML='<label class="sr-only" for="mls-language">Language</label><select id="mls-language" class="lang-switch" aria-label="Language"></select>';
+ slot.innerHTML='<label class="sr-only" for="mls-language">'+(selected==='vi'?'Ngôn ngữ':'Language')+'</label><select id="mls-language" class="lang-switch" aria-label="'+(selected==='vi'?'Ngôn ngữ':'Language')+'"></select>';
  const sel=slot.querySelector("select");
  for(const [code,x] of Object.entries(LANGS)){const o=document.createElement("option");o.value=code;o.textContent=x.name;sel.appendChild(o)}
  sel.value=selected;
