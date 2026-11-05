@@ -32,6 +32,7 @@ assert.equal(visit('',null,'vi-VN'),'vi','Browser language remains last-resort d
 assert.equal(visit('',null,'zh-HK'),'zh-TW');
 assert.match(site,/n\.parentElement\.closest\("\[data-mls-literal\]"\)/,'Name protection skipped by manual translation');
 assert.match(site,/window\.history\.replaceState\(null,"",url\.pathname\+url\.search\+url\.hash\)/,'Manual language selection persists in URL');
+assert.match(site,/const lang=guess\(\);\s*\/\/ Persist the app-provided language,[\s\S]*?localStorage\.setItem\("mls_web_lang",lang\);/,'App website language persists when navigating to Terms or Support');
 const pages=['index.html','privacy.html','terms.html','support.html','delete-data.html','methodology.html'];
 for(const name of pages){
  const html=read(name);
