@@ -501,6 +501,89 @@ const REFRESH={
 };
 for(const lang of Object.keys(REFRESH))Object.assign(T[lang],REFRESH[lang]);
 
+// MLS_TERMS_2026_TRANSLATIONS
+const MLS_TERMS_2026={
+  "ms": {
+    "5 November 2026": "5 November 2026",
+    "Free educational app": "Aplikasi pendidikan percuma",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLS kini ditawarkan secara percuma. Versi semasa tidak mempunyai langganan berbayar atau pembelian Full Version sekali bayar. Sebarang tawaran berbayar pada masa depan akan diterangkan melalui gedung aplikasi berkaitan sebelum pembelian.",
+    "Optional device permissions": "Kebenaran peranti pilihan",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "Import Health Connect dan pengesanan aktiviti pilihan memerlukan kebenaran anda. Anda boleh menarik balik akses melalui tetapan peranti. Ciri ini untuk penjejakan kendiri, bukan diagnosis perubatan.",
+    "Local data and deletion": "Data tempatan dan pemadaman",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "Rekod Life Point anda disimpan pada peranti, bukan dalam akaun awan MLS. Menetapkan semula data tempatan, mengosongkan storan aplikasi, menyahpasang aplikasi atau kehilangan peranti boleh memadamkan rekod secara kekal. Pengendali tidak dapat memulihkan rekod yang tidak pernah diterimanya.",
+    "Availability and consumer rights": "Ketersediaan dan hak pengguna",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS disediakan untuk tujuan pendidikan dan mungkin tidak sentiasa tersedia atau bebas ralat. Tiada apa-apa dalam Terma ini mengecualikan atau mengehadkan hak dan remedi yang tidak boleh dikecualikan di sisi undang-undang.",
+    "Changes to these Terms": "Perubahan kepada Terma ini",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "Terma ini boleh dikemas kini atas sebab produk, keselamatan, gedung aplikasi atau undang-undang. Perubahan penting akan ditunjukkan melalui tarikh kuat kuasa yang baharu dan disertai notis yang diwajibkan oleh undang-undang."
+  },
+  "zh-CN": {
+    "5 November 2026": "2026年11月5日",
+    "Free educational app": "免费教育应用",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLS 目前免费提供。当前版本没有付费订阅或一次性购买的 Full Version。如未来推出收费项目，将在购买前通过相应应用商店说明。",
+    "Optional device permissions": "可选设备权限",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "可选的 Health Connect 数据导入和活动检测需要您的授权。您可以在设备设置中撤销权限。这些功能用于自我记录，而非医疗诊断。",
+    "Local data and deletion": "本地数据与删除",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "您的 Life Point 记录保存在设备上，而非 MLS 云端账户。重置本地数据、清除应用存储、卸载应用或遗失设备都可能永久删除记录。运营者无法恢复从未收到的记录。",
+    "Availability and consumer rights": "服务可用性与消费者权利",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS 用于教育目的，无法保证始终可用或完全无误。本条款不排除或限制依法不得排除的权利和救济措施。",
+    "Changes to these Terms": "条款变更",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "我们可能因产品、安全、应用商店或法律原因更新本条款。重大变更将通过新的生效日期体现，并按法律要求提供通知。"
+  },
+  "zh-TW": {
+    "5 November 2026": "2026年11月5日",
+    "Free educational app": "免費教育應用程式",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLS 目前免費提供。現行版本沒有付費訂閱或一次性購買的 Full Version。如日後推出付費項目，會在購買前透過相關應用程式商店說明。",
+    "Optional device permissions": "選用裝置權限",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "選用的 Health Connect 資料匯入和活動偵測需要您的授權。您可在裝置設定中撤銷權限。這些功能僅供自我記錄，並非醫療診斷。",
+    "Local data and deletion": "本機資料與刪除",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "您的 Life Point 記錄儲存在裝置上，而非 MLS 雲端帳戶。重設本機資料、清除應用程式儲存空間、解除安裝或遺失裝置，都可能永久刪除記錄。營運者無法還原從未收到的記錄。",
+    "Availability and consumer rights": "服務可用性與消費者權利",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS 僅供教育用途，無法保證隨時可用或完全沒有錯誤。本條款不排除或限制法律規定不得排除的權利和救濟。",
+    "Changes to these Terms": "條款變更",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "我們可能因產品、安全、應用程式商店或法律原因更新本條款。重大變更會以新的生效日期標示，並依法提供必要通知。"
+  },
+  "th": {
+    "5 November 2026": "5 พฤศจิกายน 2026",
+    "Free educational app": "แอปเพื่อการศึกษาฟรี",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "ปัจจุบัน MLS ให้ใช้งานฟรี รุ่นปัจจุบันไม่มีการสมัครสมาชิกแบบชำระเงินหรือการซื้อ Full Version แบบครั้งเดียว หากมีบริการแบบชำระเงินในอนาคต จะมีการแจ้งรายละเอียดผ่านร้านค้าแอปที่เกี่ยวข้องก่อนซื้อ",
+    "Optional device permissions": "สิทธิ์การเข้าถึงอุปกรณ์แบบเลือกได้",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "การนำเข้าข้อมูล Health Connect และการตรวจจับกิจกรรมเป็นตัวเลือกและต้องได้รับอนุญาตจากคุณ คุณยกเลิกสิทธิ์ได้ในการตั้งค่าอุปกรณ์ ฟังก์ชันเหล่านี้ใช้เพื่อติดตามตนเอง ไม่ใช่เพื่อวินิจฉัยโรค",
+    "Local data and deletion": "ข้อมูลในอุปกรณ์และการลบ",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "บันทึก Life Point ของคุณจัดเก็บในอุปกรณ์ ไม่ใช่บัญชีคลาวด์ของ MLS การรีเซ็ตข้อมูล การล้างพื้นที่เก็บข้อมูล การถอนการติดตั้ง หรือการทำอุปกรณ์สูญหายอาจทำให้บันทึกถูกลบถาวร ผู้ให้บริการไม่สามารถกู้คืนบันทึกที่ไม่เคยได้รับ",
+    "Availability and consumer rights": "ความพร้อมให้บริการและสิทธิของผู้บริโภค",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS จัดให้ใช้เพื่อการศึกษาและอาจไม่พร้อมใช้งานหรือปราศจากข้อผิดพลาดเสมอไป ข้อกำหนดเหล่านี้ไม่ตัดหรือจำกัดสิทธิและการเยียวยาที่กฎหมายไม่อนุญาตให้ตัดออก",
+    "Changes to these Terms": "การเปลี่ยนแปลงข้อกำหนดเหล่านี้",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "ข้อกำหนดอาจได้รับการปรับปรุงตามเหตุผลด้านผลิตภัณฑ์ ความปลอดภัย ร้านค้าแอป หรือกฎหมาย การเปลี่ยนแปลงสำคัญจะแสดงด้วยวันที่มีผลบังคับใช้ใหม่และแจ้งตามที่กฎหมายกำหนด"
+  },
+  "ja": {
+    "5 November 2026": "2026年11月5日",
+    "Free educational app": "無料の教育アプリ",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLSは現在無料で提供されています。現行版に有料サブスクリプションや買い切りのFull Versionはありません。将来有料サービスを導入する場合は、購入前に該当するアプリストアで案内します。",
+    "Optional device permissions": "任意の端末権限",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "Health Connectからの任意の取り込みや活動検出には許可が必要です。端末の設定から許可を取り消せます。これらの機能は自己記録を目的としており、医療診断ではありません。",
+    "Local data and deletion": "端末内のデータと削除",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "Life Pointの記録はMLSのクラウドアカウントではなく端末内に保存されます。データのリセット、アプリ保存領域の消去、アンインストール、端末の紛失により記録が永久に失われる場合があります。運営者が受け取っていない記録は復元できません。",
+    "Availability and consumer rights": "サービスの提供と消費者の権利",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLSは教育目的で提供され、常時利用可能であることや無誤りを保証するものではありません。本規約は、法律上排除または制限できない権利や救済を排除・制限しません。",
+    "Changes to these Terms": "本規約の変更",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "製品、安全性、アプリストア、法令上の理由により本規約を変更する場合があります。重要な変更は施行日の更新に反映し、法令で必要な通知を行います。"
+  },
+  "ko": {
+    "5 November 2026": "2026년 11월 5일",
+    "Free educational app": "무료 교육 앱",
+    "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLS는 현재 무료로 제공됩니다. 현 버전에는 유료 구독이나 일회성 Full Version 구매가 없습니다. 향후 유료 서비스가 도입되면 구매 전에 해당 앱 스토어에서 안내합니다.",
+    "Optional device permissions": "선택적 기기 권한",
+    "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "선택적 Health Connect 가져오기와 활동 감지에는 사용자의 허가가 필요합니다. 기기 설정에서 권한을 철회할 수 있습니다. 이러한 기능은 자기 기록용이며 의학적 진단이 아닙니다.",
+    "Local data and deletion": "기기 내 데이터 및 삭제",
+    "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "Life Point 기록은 MLS 클라우드 계정이 아니라 기기에 저장됩니다. 로컬 데이터 초기화, 앱 저장공간 삭제, 앱 제거 또는 기기 분실 시 기록이 영구적으로 삭제될 수 있습니다. 운영자는 전달받지 않은 기록을 복구할 수 없습니다.",
+    "Availability and consumer rights": "서비스 가용성과 소비자 권리",
+    "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS는 교육 목적으로 제공되며 항상 이용 가능하거나 오류가 없다고 보장하지 않습니다. 본 약관은 법률상 배제하거나 제한할 수 없는 권리와 구제 수단을 제한하지 않습니다.",
+    "Changes to these Terms": "약관 변경",
+    "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "제품, 보안, 앱 스토어 또는 법률상의 이유로 본 약관을 변경할 수 있습니다. 중요한 변경은 새 시행일에 반영되며 법률상 필요한 고지를 제공합니다."
+  }
+};
+for(const lang of Object.keys(MLS_TERMS_2026))Object.assign(T[lang],MLS_TERMS_2026[lang]);
+
 // Vietnamese public-site copy is kept separately for editorial review.
 T.vi=window.MLSWebsiteVI||{};
 
