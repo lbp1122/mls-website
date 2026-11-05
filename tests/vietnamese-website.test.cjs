@@ -32,7 +32,7 @@ for(const page of pages){
  const html=read(page);
  assert.ok(html.includes('<html lang="en" translate="no" class="notranslate">'),'English source page kept: '+page);
  assert.ok(html.includes('<meta name="google" content="notranslate">'),'Chrome automatic translation disabled on '+page);
- assert.ok(html.includes('<script src="assets/i18n-vi.js?v=20261105-language"></script><script src="assets/i18n.js?v=20261105-language"></script>'),
+ assert.ok(html.includes('<script src="assets/i18n-vi.js?v=20261105-language"></script><script src="assets/i18n.js?v=20261105-langroutes"></script>'),
   'Vietnamese script must load before shared translator: '+page);
  const body=html.replace(/<head[\s\S]*?<\/head>/i,'').replace(/<script[\s\S]*?<\/script>/gi,'').replace(/<style[\s\S]*?<\/style>/gi,'');
  const strings=[...body.matchAll(/>([^<>]+)</g)]
