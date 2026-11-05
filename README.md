@@ -42,7 +42,7 @@ Approved MLS app artwork: `assets/mls-icon.png` (512×512), copied byte-for-byte
 
 ## October 2026 content refresh
 
-Home and methodology reflect separate Health → Belief → Knowledge → Relationship records, Starting Position, guided Update, and Journey. No ideal HBKR balance or combined Life Total is promoted. Android remains in testing; no public Play Store download is advertised. Website now supports eight languages: English, Bahasa Melayu, Simplified Chinese, Traditional Chinese, Thai, Japanese, Korean and Vietnamese. Health Connect and local reset instructions match the current Android test build.
+Home and methodology reflect separate Health → Belief → Knowledge → Relationship records, Starting Position, guided Update, and Journey. No ideal HBKR balance or combined Life Total is promoted. Android remains in testing; no public Play Store download is advertised. Website now supports eight languages: English, Bahasa Melayu, Simplified Chinese, Traditional Chinese, Thai, Japanese, Korean and Vietnamese. The planned manual-only MLS update removes wearable syncing and phone movement detection, while retaining on-device records and local reset instructions.
 
 
 ## Vietnamese localization (November 2026)
