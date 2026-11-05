@@ -684,6 +684,9 @@ function initSelector(selected,bind=true){
 }
 document.addEventListener("DOMContentLoaded",()=>{
  window.__mlsOriginal=document.body.innerHTML;
- const lang=guess();initSelector(lang); if(lang!=="en"){mapText(document.body,T[lang]||{});addLegalNote(lang);document.documentElement.lang=LANGS[lang].locale}
+ const lang=guess();
+ // Persist the app-provided language, including English, for internal page navigation.
+ localStorage.setItem("mls_web_lang",lang);
+ initSelector(lang); if(lang!=="en"){mapText(document.body,T[lang]||{});addLegalNote(lang);document.documentElement.lang=LANGS[lang].locale}
 });
 })();
