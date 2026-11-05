@@ -164,3 +164,18 @@ Object.assign(window.MLSWebsiteVI,{
   "Transparency": "Tính minh bạch",
   "MLS aims to make the input, unit, coefficient direction and reason for each ALP/LLP contribution inspectable. The methodology will continue to be refined as the evidence base and validation work evolve.": "MLS hướng đến việc cho phép người dùng kiểm tra dữ liệu đầu vào, đơn vị, chiều tác động của hệ số và lý do ghi nhận từng khoản ALP/LLP. Phương pháp sẽ tiếp tục được hoàn thiện khi có thêm bằng chứng và kết quả thẩm định."
 });
+
+// MLS_TERMS_2026_TRANSLATIONS
+Object.assign(window.MLSWebsiteVI,{
+  "5 November 2026": "5 tháng 11 năm 2026",
+  "Free educational app": "Ứng dụng giáo dục miễn phí",
+  "MLS is currently offered free of charge. The current version has no paid subscription or one-time Full Version purchase. Any future paid offer will be disclosed through the relevant app store before purchase.": "MLS hiện được cung cấp miễn phí. Phiên bản hiện tại không có gói thuê bao trả phí hoặc mua Full Version một lần. Nếu có dịch vụ trả phí trong tương lai, thông tin sẽ được công bố trên cửa hàng ứng dụng liên quan trước khi mua.",
+  "Optional device permissions": "Quyền truy cập thiết bị tùy chọn",
+  "Optional Health Connect imports and activity detection require your permission. You can revoke access through device settings. These features are for self-tracking, not medical diagnosis.": "Việc nhập dữ liệu Health Connect và phát hiện hoạt động là tùy chọn và cần sự cho phép của bạn. Bạn có thể thu hồi quyền trong cài đặt thiết bị. Các tính năng này dùng để tự theo dõi, không phải chẩn đoán y khoa.",
+  "Local data and deletion": "Dữ liệu cục bộ và xóa dữ liệu",
+  "Your Life Point records are stored on your device, not in an MLS cloud account. Resetting local data, clearing app storage, uninstalling the app or losing your device may permanently erase records. The operator cannot recover records it has not received.": "Hồ sơ Life Point được lưu trên thiết bị, không phải trong tài khoản đám mây MLS. Đặt lại dữ liệu, xóa bộ nhớ ứng dụng, gỡ cài đặt hoặc mất thiết bị có thể làm mất vĩnh viễn hồ sơ. Đơn vị vận hành không thể khôi phục dữ liệu chưa từng nhận được.",
+  "Availability and consumer rights": "Khả năng cung cấp và quyền người tiêu dùng",
+  "MLS is provided for educational use and may not always be available or error-free. Nothing in these Terms excludes or limits rights and remedies that cannot legally be excluded.": "MLS được cung cấp cho mục đích giáo dục và có thể không luôn sẵn sàng hoặc hoàn toàn không có lỗi. Không điều khoản nào ở đây loại trừ hay giới hạn các quyền và biện pháp khắc phục mà pháp luật không cho phép loại trừ.",
+  "Changes to these Terms": "Thay đổi Điều khoản",
+  "These Terms may be updated for product, security, store or legal reasons. Material changes will be reflected in the effective date and accompanied by any notice required by law.": "Các Điều khoản này có thể được cập nhật vì lý do sản phẩm, bảo mật, cửa hàng ứng dụng hoặc pháp luật. Thay đổi quan trọng sẽ được ghi nhận bằng ngày có hiệu lực mới và thông báo theo quy định pháp luật."
+});
