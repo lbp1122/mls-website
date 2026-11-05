@@ -651,7 +651,7 @@ function stampLanguageLinks(lang){
   if(!href || href.startsWith("#"))continue;
   let url;
   try{url=new URL(href,window.location.href)}catch(_){continue}
-  if(url.origin!==window.location.origin || !/\\.html$/.test(url.pathname))continue;
+  if(url.origin!==window.location.origin || !/\.html$/.test(url.pathname))continue;
   url.searchParams.set("lang",lang);
   a.href=url.href;
  }
