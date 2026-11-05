@@ -644,6 +644,18 @@ function addLegalNote(lang){
  }
  note.textContent=legalFallback[lang]||T[lang]?.["Translations are provided for convenience. The English version is the reference text for interpretation."]||"";
 }
+function stampLanguageLinks(lang){
+ // Same strategy as MWS: carry the chosen locale into every internal page.
+ for(const a of document.querySelectorAll('a[href]')){
+  const href=a.getAttribute("href");
+  if(!href || href.startsWith("#"))continue;
+  let url;
+  try{url=new URL(href,window.location.href)}catch(_){continue}
+  if(url.origin!==window.location.origin || !/\\.html$/.test(url.pathname))continue;
+  url.searchParams.set("lang",lang);
+  a.href=url.href;
+ }
+}
 function apply(lang){
  if(!LANGS[lang])lang="en";
  // Restore original English snapshot before translating.
@@ -664,10 +676,9 @@ function apply(lang){
  // Keep the visible URL consistent with a manual choice; do not let an older
  // app-provided ?lang parameter undo that choice on refresh.
  const url=new URL(window.location.href);
- if(url.searchParams.has("lang")){
-  url.searchParams.set("lang",lang);
-  window.history.replaceState(null,"",url.pathname+url.search+url.hash);
- }
+ url.searchParams.set("lang",lang);
+ window.history.replaceState(null,"",url.pathname+url.search+url.hash);
+ stampLanguageLinks(lang);
 }
 function initSelector(selected,bind=true){
  let slot=document.querySelector(".language-slot");
@@ -687,6 +698,8 @@ document.addEventListener("DOMContentLoaded",()=>{
  const lang=guess();
  // Persist the app-provided language, including English, for internal page navigation.
  localStorage.setItem("mls_web_lang",lang);
- initSelector(lang); if(lang!=="en"){mapText(document.body,T[lang]||{});addLegalNote(lang);document.documentElement.lang=LANGS[lang].locale}
+ initSelector(lang);
+ if(lang!=="en"){mapText(document.body,T[lang]||{});addLegalNote(lang);document.documentElement.lang=LANGS[lang].locale}
+ stampLanguageLinks(lang);
 });
 })();
