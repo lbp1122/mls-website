@@ -587,6 +587,53 @@ for(const lang of Object.keys(MLS_TERMS_2026))Object.assign(T[lang],MLS_TERMS_20
 // Vietnamese public-site copy is kept separately for editorial review.
 T.vi=window.MLSWebsiteVI||{};
 
+// MLS manual-entry-only legal text, retained in all seven translated website locales.
+const MLS_MANUAL_ONLY_LEGAL = {
+  "ms": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS merekodkan aktiviti dan maklumat kesejahteraan yang anda masukkan melalui Kemas Kini Harian atau secara manual. Aplikasi ini tidak meminta kebenaran platform kesihatan atau pengesanan pergerakan telefon. Rekod yang telah disimpan, termasuk rekod yang diimport oleh versi terdahulu, kekal pada peranti sehingga anda memadam data MLS setempat.",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS tidak menggunakan maklumat peribadi atau kesejahteraan untuk iklan tersasar, profil pemasaran atau perlombongan data yang tidak berkaitan.",
+    "Manual activity recording": "Rekod aktiviti secara manual",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "Senaman, tidur dan aktiviti lain direkodkan melalui Kemas Kini Harian atau secara manual. Aplikasi ini tidak mengambil data jam pintar atau pergerakan telefon secara automatik. Rekod terdahulu kekal dalam lejar Life Point setempat melainkan anda memadamkannya."
+  },
+  "zh-CN": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS 通过每日更新或手动输入记录活动和健康生活信息。应用不会请求健康平台或手机运动侦测权限。以前保存的记录（包括旧版本导入的记录）仍保存在设备上，直到您删除本机 MLS 数据。",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS 不会将个人或健康生活信息用于定向广告、营销画像或无关的数据挖掘。",
+    "Manual activity recording": "手动记录活动",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "运动、睡眠及其他活动通过每日更新或手动输入记录。应用不会自动读取智能手表或手机运动数据。除非您删除，否则此前保存的记录会继续保留在本机 Life Point 账本中。"
+  },
+  "zh-TW": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS 透過每日更新或手動輸入記錄活動與健康生活資訊。應用程式不會要求健康平台或手機活動偵測權限。先前儲存的紀錄（包括舊版本匯入的紀錄）會保留在裝置上，直到您刪除本機 MLS 資料。",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS 不會將個人或健康生活資訊用於定向廣告、行銷側寫或無關的資料探勘。",
+    "Manual activity recording": "手動記錄活動",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "運動、睡眠及其他活動透過每日更新或手動輸入記錄。應用程式不會自動讀取智慧手錶或手機活動資料。除非您刪除，否則先前儲存的紀錄仍會保留在本機 Life Point 帳本中。"
+  },
+  "th": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS บันทึกกิจกรรมและข้อมูลด้านสุขภาวะที่คุณกรอกผ่านการอัปเดตรายวันหรือป้อนด้วยตนเอง แอปไม่ขอสิทธิ์เข้าถึงแพลตฟอร์มสุขภาพหรือการตรวจจับการเคลื่อนไหวของโทรศัพท์ ข้อมูลที่บันทึกไว้ก่อนหน้า รวมถึงข้อมูลที่นำเข้าจากเวอร์ชันเก่า จะยังคงอยู่ในอุปกรณ์จนกว่าคุณจะลบข้อมูล MLS ในเครื่อง",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS ไม่ใช้ข้อมูลส่วนบุคคลหรือข้อมูลด้านสุขภาวะเพื่อโฆษณาแบบเจาะจง สร้างโปรไฟล์การตลาด หรือทำเหมืองข้อมูลที่ไม่เกี่ยวข้อง",
+    "Manual activity recording": "บันทึกกิจกรรมด้วยตนเอง",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "การออกกำลังกาย การนอนหลับ และกิจกรรมอื่น ๆ บันทึกผ่านการอัปเดตรายวันหรือการป้อนด้วยตนเอง แอปไม่ดึงข้อมูลจากสมาร์ตวอทช์หรือการเคลื่อนไหวของโทรศัพท์โดยอัตโนมัติ รายการที่บันทึกไว้ก่อนหน้าจะยังอยู่ในบัญชี Life Point ในเครื่องจนกว่าคุณจะลบออก"
+  },
+  "ja": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLSは、デイリー更新または手入力された活動やウェルビーイング情報を記録します。健康データ基盤やスマートフォンの動作検出へのアクセス権限は要求しません。旧バージョンで取り込んだ記録を含め、保存済みの記録は端末内のMLSデータを削除するまで端末に残ります。",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLSは、個人情報やウェルビーイング情報をターゲティング広告、マーケティング用プロファイル、無関係なデータ分析に使用しません。",
+    "Manual activity recording": "活動の手動記録",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "運動、睡眠、その他の活動はデイリー更新または手入力で記録します。スマートウォッチやスマートフォンの動作データを自動取得しません。以前の記録は削除しない限り端末内のLife Point台帳に残ります。"
+  },
+  "ko": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS는 일일 업데이트 또는 수동 입력을 통해 기록한 활동과 웰빙 정보를 저장합니다. 앱은 건강 플랫폼이나 휴대전화 움직임 감지 권한을 요청하지 않습니다. 이전 버전에서 가져온 기록을 포함한 기존 기록은 기기의 MLS 데이터를 삭제할 때까지 기기에 남습니다.",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS는 개인 정보나 웰빙 정보를 맞춤형 광고, 마케팅 프로필 작성 또는 무관한 데이터 분석에 사용하지 않습니다.",
+    "Manual activity recording": "활동 수동 기록",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "운동, 수면 및 기타 활동은 일일 업데이트나 수동 입력으로 기록합니다. 앱은 스마트워치나 휴대전화 움직임 데이터를 자동으로 가져오지 않습니다. 이전 기록은 삭제하지 않는 한 기기의 Life Point 기록에 남습니다."
+  },
+  "vi": {
+    "MLS records activities and wellbeing information entered through Daily Update or manual entry. The app does not request health-platform or phone movement-detection permissions. Previously saved records, including records imported by older versions, remain on-device until you delete local MLS data.": "MLS ghi lại hoạt động và thông tin sức khỏe, lối sống mà bạn nhập qua Cập nhật hằng ngày hoặc nhập thủ công. Ứng dụng không yêu cầu quyền truy cập nền tảng sức khỏe hoặc phát hiện chuyển động của điện thoại. Các bản ghi đã lưu, kể cả dữ liệu được nhập từ phiên bản cũ, vẫn nằm trên thiết bị cho đến khi bạn xóa dữ liệu MLS cục bộ.",
+    "MLS does not use personal or wellbeing information for targeted advertising, marketing profiles or unrelated data mining.": "MLS không sử dụng thông tin cá nhân hoặc thông tin sức khỏe, lối sống để quảng cáo nhắm mục tiêu, lập hồ sơ tiếp thị hoặc khai thác dữ liệu không liên quan.",
+    "Manual activity recording": "Ghi hoạt động thủ công",
+    "Exercise, sleep and other activities are recorded through Daily Update or manual entry. The app does not automatically retrieve smartwatch or phone movement data. Previously saved entries remain in the local Life Point ledger unless you delete them.": "Hoạt động thể dục, giấc ngủ và các hoạt động khác được ghi qua Cập nhật hằng ngày hoặc nhập thủ công. Ứng dụng không tự động lấy dữ liệu từ đồng hồ thông minh hoặc chuyển động của điện thoại. Các mục đã lưu trước đó vẫn nằm trong nhật ký Life Point cục bộ cho đến khi bạn xóa chúng."
+  }
+};
+for (const [lang, values] of Object.entries(MLS_MANUAL_ONLY_LEGAL)) Object.assign(T[lang] || (T[lang] = {}), values);
+
 const legalFallback={
  vi:"Bản dịch tiếng Việt được cung cấp để thuận tiện. Nếu bản dịch có khác biệt so với bản tiếng Anh, hãy tham khảo bản tiếng Anh để giải thích nội dung.",
  th:"เอกสารฉบับแปลนี้จัดทำเพื่อความสะดวก หากข้อความแปลแตกต่างจากฉบับภาษาอังกฤษ ให้ใช้ฉบับภาษาอังกฤษเป็นข้อความอ้างอิง",
