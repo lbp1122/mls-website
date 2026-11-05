@@ -597,9 +597,18 @@ const legalFallback={
  "zh-TW":"本翻譯僅為方便閱讀。如譯文與英文版本存在差異，以英文版本作為解釋參考文本。"
 };
 
+function canonicalLang(raw){
+ if(!raw)return null;
+ const aliases={"zh":"zh-CN","zh-Hans":"zh-CN","zh-Hant":"zh-TW","zh-hans":"zh-CN","zh-hant":"zh-TW"};
+ const value=aliases[raw]||raw;
+ return LANGS[value]?value:null;
+}
 function guess(){
- const saved=localStorage.getItem("mls_web_lang");
- if(saved&&LANGS[saved]) return saved;
+ // Explicit app handoff always wins over an old website choice or browser language.
+ const requested=canonicalLang(new URLSearchParams(window.location.search).get("lang"));
+ if(requested)return requested;
+ const saved=canonicalLang(localStorage.getItem("mls_web_lang"));
+ if(saved)return saved;
  const raw=(navigator.language||"en").toLowerCase();
  if(raw.startsWith("ms"))return"ms";
  if(raw.startsWith("zh-tw")||raw.startsWith("zh-hk")||raw.startsWith("zh-hant"))return"zh-TW";
@@ -614,7 +623,7 @@ function mapText(root,dict){
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
  const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
  for(const n of nodes){
-  if(n.parentElement && ["SCRIPT","STYLE","OPTION"].includes(n.parentElement.tagName))continue;
+  if(n.parentElement && (["SCRIPT","STYLE","OPTION"].includes(n.parentElement.tagName) || n.parentElement.closest("[data-mls-literal]")))continue;
   const raw=n.nodeValue, trimmed=raw.trim();
   if(!trimmed)continue;
   const translated=dict[trimmed];
@@ -652,6 +661,13 @@ function apply(lang){
  addLegalNote(lang);
  const sel=document.querySelector(".lang-switch");if(sel)sel.value=lang;
  localStorage.setItem("mls_web_lang",lang);
+ // Keep the visible URL consistent with a manual choice; do not let an older
+ // app-provided ?lang parameter undo that choice on refresh.
+ const url=new URL(window.location.href);
+ if(url.searchParams.has("lang")){
+  url.searchParams.set("lang",lang);
+  window.history.replaceState(null,"",url.pathname+url.search+url.hash);
+ }
 }
 function initSelector(selected,bind=true){
  let slot=document.querySelector(".language-slot");
