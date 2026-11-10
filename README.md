@@ -42,7 +42,7 @@ Approved MLS app artwork: `assets/mls-icon.png` (512×512), copied byte-for-byte
 
 ## October 2026 content refresh
 
-Home and methodology reflect separate Health → Belief → Knowledge → Relationship records, Starting Position, guided Update, and Journey. No ideal HBKR balance or combined Life Total is promoted. Android remains in testing; no public Play Store download is advertised. Website now supports eight languages: English, Bahasa Melayu, Simplified Chinese, Traditional Chinese, Thai, Japanese, Korean and Vietnamese. The current Android app uses manual health, sleep and exercise recording; Health Connect import and phone movement capture were removed in MLS v1.0.1 build 142. Local reset instructions remain available.
+Home and methodology reflect separate Health → Belief → Knowledge → Relationship records, Starting Position, guided Update, and Journey. No ideal HBKR balance or combined Life Total is promoted. Android remains in closed testing; no public Play Store download is advertised. The iOS edition is available at https://apps.apple.com/my/app/my-life-square/id6832233839 and is linked from the homepage. Website now supports eight languages: English, Bahasa Melayu, Simplified Chinese, Traditional Chinese, Thai, Japanese, Korean and Vietnamese. The current Android app uses manual health, sleep and exercise recording; Health Connect import and phone movement capture were removed in MLS v1.0.1 build 142. Local reset instructions remain available.
 
 
 ## Vietnamese localization (November 2026)
@@ -54,3 +54,11 @@ Home and methodology reflect separate Health → Belief → Knowledge → Relati
 - User language selection is stored as `mls_web_lang`; existing seven languages are preserved.
 - Legal translations include a notice that English remains the reference text when interpretation differs.
 - Verify coverage after content changes with `node tests/vietnamese-website.test.cjs`.
+
+## November 2026 iOS launch
+
+- One official multilingual website supports the released iOS app and Android closed testing.
+- iOS App Store: https://apps.apple.com/my/app/my-life-square/id6832233839
+- Android does not get a public download button until availability is confirmed.
+- Privacy and help pages mention the Android and iOS versions, including platform-specific local-data deletion guidance.
+- Mobile navigation is visible on narrow screens, and new text is translated into all eight supported languages.

@@ -47,3 +47,21 @@ section[id]{scroll-margin-top:108px}a:focus-visible,select:focus-visible{outline
 @media(max-width:900px){.hero-grid,.life-card{grid-template-columns:1fr}.hero-grid{gap:40px}.hero-logo{order:initial}.flow-grid{grid-template-columns:1fr}.hero-grid>div:first-child{max-width:680px}.brand-orbit{width:260px}.life-card{gap:28px}}
 @media(max-width:560px){.brand span{display:block;font-size:16px}.brand{gap:8px}.brand img{width:54px;height:54px}.nav-inner{height:78px;gap:8px}.lang-switch{min-width:108px;max-width:122px}.hero-grid{padding:44px 0 48px;gap:32px}.brand-orbit{width:230px;border-radius:28px}.hero-logo{gap:18px}.daily-resource b{font-size:38px}.daily-resource span{font-size:14px}.hbkr-row{padding:14px;gap:12px}.hbkr-row h3{font-size:18px}.life-card{padding:20px}.flow-card{padding:22px}.daily-flow{padding-top:12px}.footer-brand img{width:54px;height:54px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+
+
+/* November 2026: iOS launch and mobile-accessible navigation. */
+.store-downloads{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:26px}
+.store-apple{min-width:240px;text-align:center}
+.store-pending{display:inline-flex;align-items:center;min-height:48px;padding:10px 14px;color:#e4eff8;border:1px solid rgba(255,255,255,.33);border-radius:14px;font-weight:700;font-size:14px}
+@media(max-width:900px){
+ .nav-inner{height:auto;min-height:78px;flex-wrap:wrap;padding-top:8px;padding-bottom:9px}
+ .nav-inner .menu{display:flex;flex:0 0 100%;order:5;gap:16px;align-items:center;overflow-x:auto;white-space:nowrap;padding:4px 0 7px;scrollbar-width:thin}
+ .nav-inner .menu a{flex:0 0 auto}
+ .language-slot{order:3;margin-left:auto}
+}
+@media(max-width:560px){
+ .store-downloads{align-items:stretch;flex-direction:column}
+ .store-apple{min-width:0;width:100%}
+ .nav-inner .brand span{font-size:15px}
+}
+@media(max-width:360px){.nav-inner .brand img{width:43px;height:43px}.nav-inner .brand span{font-size:13px}.lang-switch{min-width:100px;max-width:104px}}
