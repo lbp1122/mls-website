@@ -738,6 +738,12 @@ const MLS_RELEASE_COPY_20261110 = {
 };
 for(const [code,dict] of Object.entries(MLS_RELEASE_COPY_20261110))Object.assign(T[code]||{},dict);
 
+// Compact Android testing label in all non-English site languages.
+const MLS_STORE_TESTING_20261110={
+ ms:"Sedang diuji","zh-CN":"测试中","zh-TW":"測試中",th:"กำลังทดสอบ",ja:"テスト中",ko:"테스트 중",vi:"Đang thử nghiệm"
+};
+for(const [locale,translation] of Object.entries(MLS_STORE_TESTING_20261110)) T[locale]["Testing"]=translation;
+
 const legalFallback={
  vi:"Bản dịch tiếng Việt được cung cấp để thuận tiện. Nếu bản dịch có khác biệt so với bản tiếng Anh, hãy tham khảo bản tiếng Anh để giải thích nội dung.",
  th:"เอกสารฉบับแปลนี้จัดทำเพื่อความสะดวก หากข้อความแปลแตกต่างจากฉบับภาษาอังกฤษ ให้ใช้ฉบับภาษาอังกฤษเป็นข้อความอ้างอิง",

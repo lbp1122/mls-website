@@ -62,3 +62,10 @@ Home and methodology reflect separate Health → Belief → Knowledge → Relati
 - Android does not get a public download button until availability is confirmed.
 - Privacy and help pages mention the Android and iOS versions, including platform-specific local-data deletion guidance.
 - Mobile navigation is visible on narrow screens, and new text is translated into all eight supported languages.
+
+## Compact store badges (10 November 2026)
+
+- The homepage uses Apple’s official, unaltered App Store badge, linking to the published iOS listing.
+- Android remains a neutral inactive "Google Play / Testing" label (not a download badge or link) until the public Play Store listing is confirmed.
+- On mobile, the two compact elements share one row; the language selector stays in the header.
+- The duplicate platform release-status line was removed. The testing label is localized in all eight supported languages.
